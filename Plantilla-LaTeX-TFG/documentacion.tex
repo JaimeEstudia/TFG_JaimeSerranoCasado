@@ -1,0 +1,101 @@
+\chapter{An\'{a}lisis}
+
+\section{Requisitos}
+
+En este apartado se describen los requisitos del sistema que se va a desarrollar: requisitos funcionales, de interfaz de usuario, de informaci\'{o}n, etc. 
+Asimismo, se especificar\'{a} si la aplicaci\'{o}n debe ser o no multiplataforma (o multiling\"{u}e), si se establecen restricciones de uso o de otro tipo 
+(por ejemplo heredadas del entorno organizativo en el que se integrar\'{a}), etc. 
+
+Para una mejor descripci\'{o}n de los requisitos, se usan los llamados casos de uso, basados en la identificaci\'{o}n de actores y tareas. 
+
+A modo de ejemplo, este ser\'{\i}a un caso de uso para la tarea \lq\lq solicitar registro\rq\rq \ en una aplicaci\'{o}n WEB, que deba ser validado por un administrador: 
+
+\begin{center}
+\begin{arial}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{|l|p{10cm}|}
+\hline
+\textbf{Nombre e ID del CU} & CU-01. Solicitar registro \\ \hline
+\textbf{Actor} & Usuario \\ \hline
+\textbf{Descripci\'{o}n} & El usuario env\'{\i}a sus datos de usuario al sistema, generando una solicitud de alta que deber\'{a} ser gestionada por un administrador. \\ \hline
+\textbf{Precondiciones} & PRE-1. El usuario no est\'{a} identificado en el sistema. \\ \hline
+\textbf{Postcondiciones} & POST-1. La solicitud queda almacenada en el sistema. \\ \hline
+\textbf{Flujo normal} &
+\begin{enumerate}[label=FN\arabic*]
+\item El actor introduce sus datos de usuario e indica al sistema que quiere solicitar el registro. 
+\item El sistema comprueba los datos introducidos.
+\item Si los datos son correctos, el sistema almacena la solicitud de registro e informa al actor del resultado. 
+\end{enumerate} \\ \hline
+\textbf{Flujo alternativo 1} &
+\begin{itemize}
+\item [FA3] Si los datos son incorrectos se informa al usuario del error y no se procede a almacenar la solicitud. 
+\end{itemize} \\ \hline
+\textbf{Flujo alternativo 2} &
+\begin{itemize}
+\item [FA3] Si no hay otros usuarios, el usuario pasa autom\'{a}ticamente al estado de activaci\'{o}n y tendr\'{a} el rol de administrador. 
+\end{itemize} \\ \hline
+\textbf{Excepciones} &
+\begin{enumerate}[label=E\arabic*]
+\item El usuario ha dejado campos requeridos sin rellenar.
+\item El usuario o correo electr\'{o}nico ya existen.
+\item El usuario est\'{a} bloqueado.
+\end{enumerate} \\ \hline
+\textbf{Prioridad} & Alta \\ \hline
+\textbf{Otra info} & El primer usuario registrado en la aplicaci\'{o}n ser\'{a} el que adquiera el rol de administrador. \\ \hline
+\caption{CU-01. Solicitar registro}
+\label{tab:CU01}
+\end{longtable}
+\end{arial}
+\end{center}
+
+% Diagramas de estados y transiciones de los posibles actores ... 
+
+\section{Atributos de calidad}
+
+Se analizar\'{a}n aqu\'{\i} los posibles indicadores de calidad de la aplicaci\'{o}n desarrollada, a saber: 
+
+\begin{description}
+
+\item[Rendimiento:] tiene que ver con los tiempos de espera y de ejecuci\'{o}n, 
+as\'{\i} como la gesti\'{o}n de la memoria y posibles problemas de concurrencia. 
+
+\item[Seguridad:] est\'{a} relacionado con la seguridad del sistema, la privacidad de datos, etc. 
+
+\item[Robustez:] tiene que ver con el comportamiento, la fiabilidad y la estabilidad de la aplicaci\'{o}n ante posibles incidencias en tiempo real. 
+
+\end{description}
+
+\chapter{Dise\~{n}o}
+
+Los aspectos de dise\~{n}o depende mucho del paradigma elegido (programaci\'{o}n orientada a objetos o no, por ejemplo).  \index{Programaci\'{o}n Orientada a Objetos}
+
+\section{Dise\~{n}o de datos}
+
+En primer lugar podemos ver el modelo de datos que se usar\'{a} para dise\~{n}ar la base de datos, si esta es necesaria.  \index{Bases de Datos}
+As\'{\i}, habr\'{a} que mostrar el diagrama entidad-relaci\'{o}n, el modelo relacional, y el diccionario de datos, a nivel l\'{o}gico, 
+y por otra parte el dise\~{n}o f\'{\i}sico de la base de datos, y los perfiles de acceso a la misma por parte de los usuarios (si procede). 
+
+\section{Diagramas de clase y de secuencia}
+
+Si la programaci\'{o}n es orientada a objetos, es necesario especificar los diagramas de clases que se usan. 
+
+Los diagramas de secuencia describen la secuencia de pasos con que un usuario interacciona con el sistema, 
+y est\'{a}n relacionados con los casos de uso de la etapa de an\'{a}lisis. 
+
+Es interesante tambi\'{e}n especificar si se ha hecho uso de dise\~{n}o de patrones. 
+
+\chapter{Implementaci\'{o}n}
+
+En  este cap\'{\i}tulo se mostrar\'{a}n los detalles m\'{a}s relevantes en cuanto a la implementaci\'{o}n del sistema. 
+
+\chapter{Pruebas}
+
+Este cap\'{\i}tulo es muy importante, y muestra las pruebas que se han realizado para demostrar el funcionamiento del sistema. 
+
+Se referir\'{a}n las estrategias de prueba utilizadas, y cu\'{a}ndo se han efectuados dichas pruebas. 
+
+Se realizar\'{a}n pruebas de caja negra y de caja blanca, unitarias, de integraci\'{o}n, de rendimiento, de seguridad, etc. 
+
+Se realizar\'{a} una buena bater\'{\i}a de pruebas para probar la funcionalidad de la aplicaci\'{o}n, que est\'{a} determinada por los requisitos de la misma, 
+y se mostrar\'{a}n los resultados (si estos son muchos, se pueden dejar los menos relevantes para el contenido del CD o para los Anexos de la Memoria). 
+

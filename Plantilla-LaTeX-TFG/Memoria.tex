@@ -1,0 +1,273 @@
+%% PREAMBULO -- COMPROBAR INFORMACION DEL TFG 
+
+\documentclass[spanish,12pt,a4paper]{book}
+% OPCIONES [hidelinks,showtrims]
+
+\topmargin=-1.pt
+\oddsidemargin=2.pt
+\evensidemargin=2.pt
+\textwidth=16.cm
+\textheight=22.cm
+
+%% COMPROBAR PAQUETES 
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[backend=biber]{biblatex}
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{array}
+
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{longtable} 
+\usepackage{underscore}
+\usepackage{eurosym}
+
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{pstricks}
+\usepackage{colortab}
+
+%% FICHERO DE REFERENCIAS 
+\bibliography{Memoria}
+
+%% DEFINIR FUENTES ESPECIALES 
+\newenvironment{arial}{\fontfamily{phv}\footnotesize\selectfont}{\par}
+\usepackage{caption}
+\usepackage{enumitem}
+\DeclareCaptionFormat{helv10}{\fontfamily{phv}\selectfont#1#2#3\par}
+\captionsetup{format=helv10,font=footnotesize}
+\makeatletter
+\renewenvironment{table}
+  {\renewcommand{\arraystretch}{1.3}
+  \@float{table}}
+  {\end@float}
+\makeatother
+\makeatletter
+\AddEnumerateCounter{\PaddingUp}{\two@digits}{A00}
+\newcommand\PaddingUp[1]{\expandafter\two@digits\csname c@#1\endcsname}
+\makeatother
+
+%% FORMATO DE PAGINA ADICIONAL 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\thepage}{\roman{page}}
+\fancyhf{}
+\fancyhf[HRO]{\nouppercase{\rightmark}}
+\fancyhf[HLE]{\nouppercase{\leftmark}}
+\fancyhf[FLO,FRE]{\em Nombre y Apellidos del Autor}
+\fancyhf[FRO,FLE]{\thepage}
+
+%% DATOS PARA EL TITULO 
+\title{\fontfamily{phv}\selectfont{T\'{\i}tulo del TFG}}
+\author{Jaime Serrano Casado}
+\date{}
+
+%% OPCIONAL: INDICE DE NOMBRES 
+\usepackage{makeidx}
+\makeindex 
+
+%% FIN DEL PREAMBULO 
+
+
+\begin{document}
+
+
+\selectlanguage{spanish}
+\hyphenation{spanish}
+
+
+%% PORTADA 
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width = 2pt] ($(current page.north west) + (1in,-1in)$) rectangle ($(current page.south east) + (-1in,1in)$);
+\end{tikzpicture}
+
+\vspace*{-1.cm}
+\begin{figure}[htb]
+\centering
+%\hspace{1.cm}
+\includegraphics[width=4.5cm]{UVA.png}
+\end{figure}
+
+\centering
+%\hspace{1.cm}
+{\fontfamily{phv}\selectfont{\large \textbf{Universidad de Valladolid}}}
+
+\vspace*{3cm}
+\centering
+%\hspace{1.cm}
+{\fontfamily{phv}\selectfont{\Large \textbf{ESCUELA DE INGENIER\'{I}A INFORM\'{A}TICA \\ 
+\vspace{.2cm}
+%\hspace{1.cm}
+DE SEGOVIA}}}
+
+\vspace*{0.5cm}
+%\hspace{1.cm}
+{\fontfamily{phv}\selectfont{\Large \textbf{Grado en Ingenier\'{\i}a Inform\'{a}tica \\ 
+%\hspace{1.cm}
+de Servicios y Aplicaciones}}}
+
+\vspace*{2cm}
+~\hspace{.5cm}\rule{140mm}{0.1mm}\\
+\vspace*{1cm}
+%\hspace{1.cm}
+{\fontfamily{phv}\selectfont{\Large \textbf{T\'{\i}tulo del Trabajo Fin de Grado}}}
+
+\vspace*{2cm}
+~\hspace{.5cm}\rule{140mm}{0.1mm}\\
+
+\raggedleft
+\vfill
+{\fontfamily{phv}\selectfont{\large \textbf{Alumno: Nombre y Apellidos~\hspace{.5cm}}}}
+
+\vspace*{1cm}
+{\fontfamily{phv}\selectfont{\large \textbf{Tutor/a/es: Nombres y Apellidos~\hspace{.5cm}}}}
+
+\end{titlepage}
+
+%% PAGINA EN BLANCO %% 
+\newpage 
+\thispagestyle{empty}
+$\,$
+
+%% TITULO 
+\maketitle 
+
+%% PAGINA EN BLANCO %% 
+\thispagestyle{empty}
+$\,$
+\newpage 
+
+
+% RESET NUMERACION DE PAGINAS 
+\pagenumbering{gobble}
+
+
+%% INDICE DE CONTENIDOS 
+\pagenumbering{roman}
+\tableofcontents
+
+%% INDICE DE FIGURAS 
+\cleardoublepage 
+\addcontentsline{toc}{chapter}{Lista de figuras}
+\listoffigures 
+
+%% INDICE DE TABLAS 
+\cleardoublepage 
+\addcontentsline{toc}{chapter}{Lista de tablas}
+\listoftables 
+
+
+%%% PAGINAS OPCIONALES 
+
+%% DEDICATORIA 
+\newpage
+
+\chapter*{}
+\begin{flushright}
+\textit{Dedicado a \\
+mi familia}
+\end{flushright}
+
+%% PAGINA EN BLANCO 
+\newpage 
+\thispagestyle{empty}
+$\,$
+
+%% AGRADECIMIENTOS 
+\chapter*{Agradecimientos}
+ 
+Muchas gracias a todos 
+
+%% PAGINA EN BLANCO (SI PROCEDE) 
+\newpage 
+\thispagestyle{empty}
+$\,$
+
+%%%% FIN DE PAGINAS OPCIONALES 
+
+\chapter*{Resumen}
+\addcontentsline{toc}{chapter}{Resumen}
+\markboth{RESUMEN}{RESUMEN}
+
+Resumen que aparecer\'{a} en UVADOC. 
+
+\bigskip 
+
+{\bf Palabras claves:} separadas por comas. 
+
+%% PAGINA EN BLANCO (SI PROCEDE) 
+\newpage 
+\thispagestyle{empty}
+$\,$
+
+
+%% CONTENIDO DE LA MEMORIA 
+
+\newpage 
+\pagenumbering{arabic}
+
+
+\cleardoublepage \begingroup \makeatletter \let\ps@plain\ps@empty 
+\part{Memoria del Proyecto}
+\endgroup 
+
+%% PARTE I EN UN FICHERO APARTE 
+\include{introduccion}
+
+
+\cleardoublepage \begingroup \makeatletter \let\ps@plain\ps@empty 
+\part{Documentación técnica}
+\endgroup 
+
+
+%% PARTE II EN UN FICHERO APARTE 
+\include{documentacion}
+
+
+\cleardoublepage \begingroup \makeatletter \let\ps@plain\ps@empty 
+\part{Manuales de la Aplicaci\'{o}n}
+\endgroup 
+
+
+%% PARTE III EN UN FICHERO APARTE 
+\include{manuales}
+
+
+\clearpage 
+
+%% POSIBLES APENDICES 
+
+\appendix 
+
+\cleardoublepage \begingroup \makeatletter \let\ps@plain\ps@empty 
+\part{Ap\'{e}ndices}
+\endgroup 
+
+%% ANEXOS EN UN FICHERO APARTE 
+\include{anexos}
+
+%% BIBLIOGRAFIA 
+
+%% Libros y referencias por orden 
+%% SI SE PONEN ENLACES WEB, INDICAR EL AUTOR O LA ORGANIZACION RESPONSABLE DE LA INFORMACION 
+
+\nocite{*}
+\printbibliography[heading=bibintoc]
+
+\printindex 
+
+\end{document}
+

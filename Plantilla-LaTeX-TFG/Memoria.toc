@@ -1,0 +1,43 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Lista de figuras}{\es@scroman {iii}}{chapter*.2}%
+\contentsline {chapter}{Lista de tablas}{\es@scroman {v}}{chapter*.3}%
+\contentsline {chapter}{Resumen}{\es@scroman {xi}}{chapter*.7}%
+\contentsline {part}{I\hspace {1em}Memoria del Proyecto}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Descripci\'{o}n del proyecto}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducci\'{o}n}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos del trabajo}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Entorno de aplicaci\'{o}n}{4}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Metodolog\'{\i }a}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Proceso de desarrollo}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Herramientas utilizadas}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Arquitectura}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Definici\'{o}n de siglas y abreviaturas}{8}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Planificaci\'{o}n}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estimaci\'{o}n del esfuerzo}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Planificaci\'{o}n temporal}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Presupuesto econ\'{o}mico}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Hardware y software}{12}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Recursos humanos}{12}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Presupuesto total}{12}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{15}{chapter.4}%
+\contentsline {part}{II\hspace {1em}Documentación técnica}{17}{part.2}%
+\contentsline {chapter}{\numberline {5}An\'{a}lisis}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Requisitos}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Atributos de calidad}{20}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Dise\~{n}o}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Dise\~{n}o de datos}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Diagramas de clase y de secuencia}{21}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Implementaci\'{o}n}{23}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Pruebas}{25}{chapter.8}%
+\contentsline {part}{III\hspace {1em}Manuales de la Aplicaci\'{o}n}{27}{part.3}%
+\contentsline {chapter}{\numberline {9}Manual de Instalaci\'{o}n}{29}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Manual de Usuario}{31}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Manual de Usuario}{31}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Manual de Administraci\'{o}n}{31}{section.10.2}%
+\contentsline {part}{IV\hspace {1em}Ap\'{e}ndices}{33}{part.4}%
+\contentsline {chapter}{\numberline {A}Anexos}{35}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Informaci\'{o}n complementaria}{35}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Diagramas y tablas}{35}{section.Alph1.2}%
+\contentsline {chapter}{\numberline {B}Contenido del CD}{37}{appendix.Alph2}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{39}{appendix*.13}%

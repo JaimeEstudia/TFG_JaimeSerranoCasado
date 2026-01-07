@@ -1,0 +1,121 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ACM}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=899832d069857fcee99b9dc77d1cdf89}{%
+           family={Bourque},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7b0f1ddd0925a18a51759d52bf3a0f1a}{%
+           family={Fairley},
+           familyi={F\bibinitperiod},
+           given={R.E.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM-IEEE}%
+      }
+      \strng{namehash}{12091ee5839e2051c1dda2537e284c50}
+      \strng{fullhash}{12091ee5839e2051c1dda2537e284c50}
+      \strng{bibnamehash}{12091ee5839e2051c1dda2537e284c50}
+      \strng{authorbibnamehash}{12091ee5839e2051c1dda2537e284c50}
+      \strng{authornamehash}{12091ee5839e2051c1dda2537e284c50}
+      \strng{authorfullhash}{12091ee5839e2051c1dda2537e284c50}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Guide to the Software Engineering Body of Knowledge, Version 3.0}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{QSM}{online}{}
+      \list{organization}{1}{%
+        {Quantitative Software Management}%
+      }
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeltitlesource}{title}
+      \field{title}{Function Point Languages Table}
+      \field{year}{{A}gosto 2015}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://www.qsm.com/resources/function-point-languages-table
+      \endverb
+      \verb{url}
+      \verb http://www.qsm.com/resources/function-point-languages-table
+      \endverb
+    \endentry
+    \entry{SE}{book}{}
+      \name{author}{1}{}{%
+        {{hash=12dea31a094730e8ecc2e2c33de0fe1f}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{12dea31a094730e8ecc2e2c33de0fe1f}
+      \strng{fullhash}{12dea31a094730e8ecc2e2c33de0fe1f}
+      \strng{bibnamehash}{12dea31a094730e8ecc2e2c33de0fe1f}
+      \strng{authorbibnamehash}{12dea31a094730e8ecc2e2c33de0fe1f}
+      \strng{authornamehash}{12dea31a094730e8ecc2e2c33de0fe1f}
+      \strng{authorfullhash}{12dea31a094730e8ecc2e2c33de0fe1f}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ingeniería del Software}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{Shamir}{article}{}
+      \name{author}{1}{}{%
+        {{hash=71b77dd8ab33fe646ef25cded49e9881}{%
+           family={Shamir},
+           familyi={S\bibinitperiod},
+           given={Adi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{71b77dd8ab33fe646ef25cded49e9881}
+      \strng{fullhash}{71b77dd8ab33fe646ef25cded49e9881}
+      \strng{bibnamehash}{71b77dd8ab33fe646ef25cded49e9881}
+      \strng{authorbibnamehash}{71b77dd8ab33fe646ef25cded49e9881}
+      \strng{authornamehash}{71b77dd8ab33fe646ef25cded49e9881}
+      \strng{authorfullhash}{71b77dd8ab33fe646ef25cded49e9881}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{title}{How to share a secret}
+      \field{volume}{22}
+      \field{year}{1979}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

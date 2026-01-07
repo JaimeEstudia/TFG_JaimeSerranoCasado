@@ -1,0 +1,187 @@
+\chapter{Descripci\'{o}n del proyecto}
+
+Se tratar\'{a} brevemente de explicar c\'{o}mo  se organiza la Memoria del Trabajo Fin de Grado (TFG), 
+del posible contenido de cada uno de los cap\'{\i}tulos y secciones, 
+as\'{\i} como de contenidos m\'{\i}nimos exigibles y algunas recomendaciones pr\'{a}cticas. 
+
+\section{Introducci\'{o}n}
+
+La correcci\'{o}n de proyectos acad\'{e}micos mediante sistemas inteligentes actualmente est\'{a} limitada, especialmente en la adaptaci\'{o}n al nivel objetivo de los estudiantes en diferentes etapas formativas. Solucionar esta carencia es la motivaci\'{o}n del presente Trabajo de Fin de Grado.
+
+El sistema se intragra con el entorno acad\'{e}mico con el fin de ofrecer al alumnado una retroalimentaci\'{o}n m\'{a}s precisa y personal, alineada con los objetivos marcados por el profesorado.
+
+Esta memoria se estructura en cuatro cap\'{i}tulos:
+\begin{itemize}
+	\item Memoria descriptiva
+	\item Documentaci\'{o}n t\'{e}cnica del sistema 
+	\item Manuales de la aplicaci\'{o}n
+	\item Ap\'{e}ndices 
+\end{itemize}
+
+
+\section{Objetivos del trabajo}
+
+Se explicar\'{a} tambi\'{e}n el alcance de la aplicaci\'{o}n, sus restricciones y limitaciones, 
+as\'{\i} como las perspectivas del trabajo. 
+
+El objetivo general es el diseño y desarrollo de un sistema inteligente que genere retroalimentación automática para proyectos académicos, adaptada al nivel requerido por el profesor segun la etapa formativa, mediante el uso de LLMs y la herramienta LangGraph.
+
+La aplicaci\'{o}n desarrollada permite analizar proyectos acad\'{e}micos de la asignatura Programaci\'{o}n Orientada a Objetos (POO) y generar comentarios ajustados a los objetivos formativos de la asignatura mediante el an\'{a}lisis de la rubrica correspondiente, cubriendo la necesidad de una corrección más personalizada y del nivel objetivo. El sistema se integra en el entorno académico y está orientado a servir como apoyo al profesorado, sin sustituir el proceso de evaluación humana en ning\'{u}n caso.
+
+Los objetivos del trabajo son:
+\begin{itemize}
+\item A nivel personal, profundizar en el uso de tecnologías de inteligencia artificial aplicadas al ámbito educativo, así como en el diseño de sistemas basados en LLMs y flujos de trabajo mediante LangGraph.
+
+\item A nivel teórico, estudiar los fundamentos de la evaluación automática, los modelos de lenguaje de gran tamaño y su aplicación en entornos formativos.
+
+\item A nivel práctico, implementar una aplicación que mejore la calidad de la retroalimentación automática, teniendo en cuenta el nivel académico del alumnado.
+\end{itemize}
+El sistema desarrollado está concebido para su aplicación en un contexto académico, aunque su uso queda limitado al ámbito de una asignatura concreta por el momento. Entre las principales restricciones se encuentran la dependencia de la API de los LLMs empleados y la necesidad de una serie de rubricas para los trabajos a corregir. Como perspectiva futura, el proyecto podría ampliarse a otras asignaturas o niveles educativos, así como incorporar mecanismos de evaluación más avanzados y personalizados.
+
+\section{Entorno de aplicaci\'{o}n}
+
+En los últimos años, el uso de inteligencia artificial en todos los ambitos ha experimentado un notable crecimiento, especificamente en el sector educativo diversos trabajos y herramientas tecnológicas han abordado la corrección automática de proyectos mediante reglas predefinidas o análisis estático de código, con resultados desiguales.
+
+Las soluciones tradicionales presentan como principal ventaja su rapidez y consistencia en la evaluación, así como su capacidad para reducir la carga de trabajo del profesorado. No obstante, estas herramientas suelen ofrecer retroalimentación genérica, poco flexible y escasamente adaptada al nivel académico del estudiante, lo que limita su utilidad ya que la personalización es clave para el aprendizaje.
+
+Más recientemente, el uso de modelos de lenguaje de gran tamaño ha abierto nuevas posibilidades en la generación de retroalimentación automática más rica y contextualizada. Sin embargo, muchos de los trabajos existentes no consideran de forma explícita el nivel formativo requerido segun la etapa formativa ni estructuran adecuadamente el proceso de generación de comentarios, lo que puede dar lugar a respuestas inconsistentes o poco alineadas con los objetivos docentes.
+
+En este contexto este Trabajo de Fin de Grado propone un enfoque basado en el uso de LangGraph y LLMs, orientado a mejorar la calidad y adecuación de la retroalimentación automática en proyectos académicos. Este enfoque permite estructurar el proceso de análisis y generación de respuestas, teniendo en cuenta el nivel exigido al estudiante y el contexto específico de la asignatura, justificando así la pertinencia y originalidad del trabajo desarrollado.
+
+\chapter{Metodolog\'{\i}a}
+
+En este cap\'{\i}tulo se detallar\'{a}n las cuestiones metodol\'{o}gicas, es decir, 
+las metodolog\'{\i}as y herramientas que se han utilizado para plantear el trabajo. 
+
+\section{Proceso de desarrollo}
+
+Este apartado se refiere a si se ha utilizado un modelo de desarrollo iterativo, de prototipos, en cascada, etc (ciclo de vida del software). 
+Por ejemplo, el siguiente diagrama refleja el modelo de desarrollo iterativo: 
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\textwidth]{Iterativo}
+\caption{Modelo de desarrollo iterativo}
+\end{center}
+\end{figure}
+
+Tambi\'{e}n se especificar\'{a} si se ha usado el paradigma de programaci\'{o}n estructurada o programaci\'{o}n orientada a objetos. \index{Programaci\'{o}n Orientada a Objetos}
+
+Asimismo, se explicar\'{a} si he ha usado alguna metodolog\'{\i}a especial (metodolog\'{\i}as \'{a}giles, TDD, etc). 
+
+\section{Herramientas utilizadas}
+
+En esta secci\'{o}n se entrar\'{a} m\'{a}s en detalle en las tecnolog\'{\i}as especi\'{\i}ficas que se han empleado para 
+desarrollar la aplicaci\'{o}n: lenguajes de programaci\'{o}n empleados, gestor de bases de datos, herramientas 
+usadas en la planficaci\'{o}n y en la generaci\'{o}n de documentaci\'{o}n, sistema operativo, etc.  \index{Bases de Datos}
+
+Asimismo, se defender\'{a}n los criterios por los que se han seleccionado las herramientas elegidas, 
+de entre otras posibles, haciendo referencia a posibles ventajas e inconvenientes. 
+
+\section{Arquitectura}
+
+Se explicar\'{a} en este apartado la arquitectura de la aplicaci\'{o}n, tanto a nivel l\'{o}gico como f\'{\i}sico. 
+Por ejemplo, el diagrama \ref{arqL} ilustra la arquitectura l\'{o}gica cliente-servidor. 
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[scale=0.5]{ArquitecturaL}
+\caption{Arquitectura l\'{o}gica}\label{arqL}
+\end{center}
+\end{figure}
+
+Sin embargo, el diagrama \ref{arqF} representa una posible arquitectura f\'{\i}sica correspondiente a dicho moxelo l\'{o}gico. 
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.2]{ArquitecturaF}
+\caption{Arquitectura f\'{\i}sica}\label{arqF}
+\end{center}
+\end{figure}
+
+% patr\'{o}n o modelo vista-controlador (MVC) ... 
+
+\section{Definici\'{o}n de siglas y abreviaturas}
+
+Es interesante mostrar una tabla o lista de abreviaturas y siglas (acr\'{o}nimos) de uso extendido en la Memoria, 
+pero de los que es posible que el lector de la misma no tenga conocimiento o sean ambiguos. 
+
+\chapter{Planificaci\'{o}n}
+
+En este cap\'{\i}tulo se aboradar\'{a}n las cuestiones relativas a la planificaci\'{o}n del trabajo. 
+
+\section{Estimaci\'{o}n del esfuerzo}
+
+Para la planificaci\'{o}n temporal y de costes pueden aplicarse al menos dos enfoques:  
+el primero se basa en la estimaci\'{o}n del esfuerzo mediante {\bf puntos de funci\'{o}n} y su transformaci\'{o}n en l\'{\i}neas de c\'{o}digo, 
+con el fin de calcular el coste final mediante el m\'{e}todo {\em COCOMO II}. 
+
+El segundo m\'{e}todo consiste en la estimaci\'{o}n de \textbf{puntos de Caso de Uso}, 
+que se basa en un an\'{a}lisis previo de los requisitos funcionales de la aplicaci\'{o}n. 
+
+Cualquiera que sea el m\'{e}todo elegido, conviene justificar las ventajas e inconvenientes, aplic\'{a}ndolo al caso concreto del TFG. 
+
+\section{Planificaci\'{o}n temporal}
+
+En la planificaci\'{o}n de tareas se tendr\'{a}n el cuenta los objetivos y requisitos de la aplicaci\'{o}n, as\'{\i} como la estimaci\'{o}n del esfuerzo, 
+pero tambi\'{e}n puede tenerse en cuenta la distinci\'{o}n en tareas de an\'{a}lisis, dise\~{n}o, implementaci\'{o}n y pruebas, 
+en cada una de las posibles iteraciones del ciclo de vida del proyecto, y el marco temporal (plazo de entrega del proyecto). 
+
+El correspondiente diagrama de Gantt permite observar de forma gr\'{a}fica la distribuci\'{o}n temporal de las tareas: 
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\textwidth]{Gantt}
+\caption{Diagrama de Gantt}
+\end{center}
+\end{figure}
+
+\section{Presupuesto econ\'{o}mico}
+
+Para la estimaci\'{o}n del presupuesto se tendr\'{a}n en cuenta las herramientas utilizadas 
+(hardware y software, con los factores de impacto que correspondan al duraci\'{o}n del proyecto), 
+junto con los recursos humanos necesarios, seg\'{u}n la planificaci\'{o}n de tareas, y el tipo de rol 
+(analista, programador, etc) correspondiente a cada tarea. Para ello conviene tener una tabla 
+actualizada del coste por hora de cada tarea del proyecto, adem\'{a}s del estudio previo de la 
+planificaci\'{o}n de tareas. 
+
+\subsection{Hardware y software}
+
+Valoraci\'{o}n del hardware y software utilizado en el proyecto. 
+
+\subsection{Recursos humanos}
+
+Valoraci\'{o}n de los recursos humanos
+
+\subsection{Presupuesto total}
+
+Se resumir\'{a}n los conceptos econ\'{o}micos, por ejemplo en una tabla, con las estimaciones realizadas y el coste real, si procede: 
+
+\begin{table}[h!]
+\begin{center}
+\begin{arial}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+$\,$ & \textbf{Hardware} & \textbf{Software} & \textbf{RRHH} & \textbf{Total} \\ \hline
+\textbf{Estimaci\'{o}n I} & 650,75 \euro & 500 & 60000 \euro & \emph{61150,75 \euro} \\
+\textbf{Estimaci\'{o}n II} & 650,75 \euro & 500 & 40000 \euro & \emph{41150,75 \euro} \\
+\textbf{Coste real} & 650,75 \euro & 400 & 50000 \euro & \emph{51050,75 \euro} \\ \hline
+\end{tabular}
+\caption{Presupuesto total}
+\end{arial}
+\end{center}
+\end{table}
+
+{\bf Nota:} es interesante analizar la discrepancia (si es que existe) entre el presupuesto y el coste real, y tratar de explicar sus causas. 
+
+\chapter{Conclusiones}
+
+Este cap\'{\i}tulo debe analizar los aspectos relativos a la consecuci\'{o}n de los objetivos propuestos, y el grado de satisfacci\'{o}n de los mismos. 
+
+Asimismo, se puede abordar un an\'{a}lisis cr\'{\i}tico de las ventajas en inconvenientes de las soluciones propuestas. en el trabajo. 
+
+Por otra parte, conviene resaltar la el grado de originalidad del TFG, as\'{\i} como el valor a\~{n}adido que supone el TFG con respecto a los estudios de grado; 
+dicho de otra forma, qu\'{e} cosas nuevas se han aprendido y trabajado en el proyecto que no se hab\'{\i}an aprendido a lo largo de la carrera. 
+
+Por \'{u}ltimo, es necesario proponer posibles mejoras y futuras ampliaciones del trabajo. 
+
