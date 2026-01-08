@@ -56,12 +56,22 @@ Se analizar\'{a}n aqu\'{\i} los posibles indicadores de calidad de la aplicaci\'
 
 \begin{description}
 
-\item[Rendimiento:] tiene que ver con los tiempos de espera y de ejecuci\'{o}n, 
-as\'{\i} como la gesti\'{o}n de la memoria y posibles problemas de concurrencia. 
+\item[Tiempo de corrección]: La aplicación deberá ser capaz de evaluar un proyecto académico de programación de hasta 2 000 líneas de código distribuidas en múltiples archivos en un tiempo máximo de 1 minuto, incluyendo el tiempo de comunicación con la API de la LLM, en un equipo local con 16 GB de RAM y CPU de 8 núcleos.
 
-\item[Seguridad:] est\'{a} relacionado con la seguridad del sistema, la privacidad de datos, etc. 
+\item[Uso de memoria]: El consumo máximo de memoria de la aplicación cliente durante el proceso de corrección no deberá superar el 60\% de la memoria RAM disponible.
 
-\item[Robustez:] tiene que ver con el comportamiento, la fiabilidad y la estabilidad de la aplicaci\'{o}n ante posibles incidencias en tiempo real. 
+\item[Ejecución concurrente]: El sistema deberá permitir la evaluación concurrente de al menos dos proyectos de programación independientes mediante llamadas paralelas a la API, sin que el tiempo medio de respuesta por proyecto se incremente más de un 40\%.
+
+\item[Privacidad de los datos]: El código fuente enviado a la API de la LLM será solo el contenido necesario para la evaluación y no se registrará ninguna informacion sensible del usuario. El codigo tampoco se almacenará de forma persistente en la aplicación cliente si este no lo aprueba.
+
+\item[Aislamiento de archivos]: La aplicación deberá restringir el acceso a los archivos del sistema únicamente al directorio del proyecto a evaluar, impidiendo la lectura, ejecución o modificación de código fuera de dicho ámbito.
+
+\item[Gestión de errores]: Ante fallos en la comunicación con la API de la LLM, tiempos de espera excedidos o respuestas inválidas, la aplicación deberá capturar la excepción, informar al usuario de forma clara y permitir reintentar la operación sin finalizar abruptamente la ejecución.
+
+\item[Tolerancia a entradas inválidas]: El sistema deberá detectar y rechazar proyectos que contengan archivos no soportados, dependencias inexistentes o código corrupto, notificando el error al usuario en un tiempo máximo de 10 segundos antes de iniciar el proceso de evaluación.
+
+\item[Estabilidad prolongada]: La aplicación deberá mantener un funcionamiento estable durante sesiones continuas de al menos 2 horas evaluando múltiples proyectos de programación consecutivos, sin fugas de memoria, acumulación de procesos de red ni degradación significativa del rendimiento.
+
 
 \end{description}
 

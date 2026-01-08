@@ -25,19 +25,19 @@
 \contentsline {chapter}{\numberline {5}An\'{a}lisis}{19}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Requisitos}{19}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Atributos de calidad}{20}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Dise\~{n}o}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Dise\~{n}o de datos}{21}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Diagramas de clase y de secuencia}{21}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Implementaci\'{o}n}{23}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Pruebas}{25}{chapter.8}%
-\contentsline {part}{III\hspace {1em}Manuales de la Aplicaci\'{o}n}{27}{part.3}%
-\contentsline {chapter}{\numberline {9}Manual de Instalaci\'{o}n}{29}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Manual de Usuario}{31}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Manual de Usuario}{31}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Manual de Administraci\'{o}n}{31}{section.10.2}%
-\contentsline {part}{IV\hspace {1em}Ap\'{e}ndices}{33}{part.4}%
-\contentsline {chapter}{\numberline {A}Anexos}{35}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Informaci\'{o}n complementaria}{35}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Diagramas y tablas}{35}{section.Alph1.2}%
-\contentsline {chapter}{\numberline {B}Contenido del CD}{37}{appendix.Alph2}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{39}{appendix*.13}%
+\contentsline {chapter}{\numberline {6}Dise\~{n}o}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Dise\~{n}o de datos}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Diagramas de clase y de secuencia}{23}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Implementaci\'{o}n}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Pruebas}{27}{chapter.8}%
+\contentsline {part}{III\hspace {1em}Manuales de la Aplicaci\'{o}n}{29}{part.3}%
+\contentsline {chapter}{\numberline {9}Manual de Instalaci\'{o}n}{31}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Manual de Usuario}{33}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Manual de Usuario}{33}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Manual de Administraci\'{o}n}{33}{section.10.2}%
+\contentsline {part}{IV\hspace {1em}Ap\'{e}ndices}{35}{part.4}%
+\contentsline {chapter}{\numberline {A}Anexos}{37}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Informaci\'{o}n complementaria}{37}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Diagramas y tablas}{37}{section.Alph1.2}%
+\contentsline {chapter}{\numberline {B}Contenido del CD}{39}{appendix.Alph2}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{41}{appendix*.13}%

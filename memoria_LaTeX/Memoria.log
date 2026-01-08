@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.15)  8 JAN 2026 11:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.15)  8 JAN 2026 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1635,9 +1635,9 @@ Cap\'{\i }tulo 5.
 
 
 ]
-LaTeX Info: Redefining \sptext on input line 68.
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
+LaTeX Info: Redefining \sptext on input line 70.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1647,13 +1647,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
-Cap\'{\i }tulo 6.
-[21
+LaTeX Info: Redefining \sptext on input line 78.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
 
-]
-LaTeX Info: Redefining \sptext on input line 87.
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+LaTeX Info: Redefining \sptext on input line 78.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1665,11 +1673,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22
 
 ]
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 6.
 [23]
-LaTeX Info: Redefining \sptext on input line 91.
-LaTeX Info: Redefining \. on input line 91.
-LaTeX Info: Redefining \% on input line 91.
+LaTeX Info: Redefining \sptext on input line 97.
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1681,8 +1689,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [24
 
 ]
+Cap\'{\i }tulo 7.
+[25]
+LaTeX Info: Redefining \sptext on input line 101.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26
+
+]
 Cap\'{\i }tulo 8.
-) [25]
+) [27]
 LaTeX Info: Redefining \sptext on input line 240.
 LaTeX Info: Redefining \. on input line 240.
 LaTeX Info: Redefining \% on input line 240.
@@ -1694,18 +1718,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26
+[28
 
 
 
-] [27
+] [29
 
-] [28]
+] [30]
 \openout2 = `manuales.aux'.
 
  (manuales.tex
 Cap\'{\i }tulo 9.
-[29
+[31
 
 
 ]
@@ -1720,11 +1744,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30
+[32
 
 ]
 Cap\'{\i }tulo 10.
-) [31]
+) [33]
 LaTeX Info: Redefining \sptext on input line 255.
 LaTeX Info: Redefining \. on input line 255.
 LaTeX Info: Redefining \% on input line 255.
@@ -1736,19 +1760,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32
+[34
 
 
 
 
-] [33
+] [35
 
-] [34]
+] [36]
 \openout2 = `anexos.aux'.
 
  (anexos.tex
 Ap\'{e}ndice A.
-[35
+[37
 
 
 ]
@@ -1763,11 +1787,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36
+[38
 
 ]
 Ap\'{e}ndice B.
-) [37]
+) [39]
 LaTeX Info: Redefining \sptext on input line 268.
 LaTeX Info: Redefining \. on input line 268.
 LaTeX Info: Redefining \% on input line 268.
@@ -1779,7 +1803,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38
+[40
 
 
 
@@ -1790,7 +1814,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 No file Memoria.ind.
-[39] (Memoria.aux
+[41] (Memoria.aux
 LaTeX Info: Redefining \sptext on input line 14.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
@@ -1810,8 +1834,8 @@ Package logreq Info: Writing requests to 'Memoria.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36095 strings out of 474486
- 672831 string characters out of 5743754
+ 36097 strings out of 474486
+ 672845 string characters out of 5743754
  1939542 words of memory out of 5000000
  57658 multiletter control sequences out of 15000+600000
  598457 words of font info for 99 fonts, out of 8000000 for 9000
@@ -1834,9 +1858,9 @@ sers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C
 :/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb
 ><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a
 .pfb>
-Output written on Memoria.pdf (55 pages, 597851 bytes).
+Output written on Memoria.pdf (57 pages, 603291 bytes).
 PDF statistics:
- 907 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
+ 922 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
