@@ -1,0 +1,3 @@
+1º Los alumnos deberan comentar cada función de su codigo
+2º Los alumnos deberan definir las variables con su tipo de dato
+3º Los alumnos deberan indicar si la contraseña no es aceptada

@@ -1,0 +1,3 @@
+1º Los alumnos deberan comentar cada función de su codigo
+2º Los alumnos no deben de guardar contraseñas en texto plano
+3º Los alumnos deben mantener su codigo actualizado y limpio de lineas que no tengan uso
