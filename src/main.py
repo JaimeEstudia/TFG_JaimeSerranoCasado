@@ -1,12 +1,25 @@
-from utils import exportar_grafo, extraer_contenido_archivo
+from utils import exportar_grafo, extraer_contenido_archivo, medir_cpu_ram
 from langgraph.graph import StateGraph, END
 from langchain_openai import ChatOpenAI
 from typing import TypedDict
+import time
+import logging
+
+logging.basicConfig(
+    filename="logs/ejecuciones.log",
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s",
+)
+
+# Silenciamos librerías externas para evitar el ruido en el log
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("openai").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 
 def ask_for_rubric() -> str:
     # TODO
-    option = input("Rubrica 1 o 2:")
+    option = input("Rubrica 1 o 2: ")
     if option == "1":
         return extraer_contenido_archivo("./test/rubrica_nivel_1.txt")
     elif option == "2":
@@ -15,7 +28,7 @@ def ask_for_rubric() -> str:
 
 def ask_for_code() -> str:
     # TODO
-    option = input("Codigo 1:")
+    option = input("Codigo 1: ")
     if option == "1":
         return extraer_contenido_archivo("./test/python_code_test.py")
 
@@ -70,7 +83,16 @@ def main():
     executor = define_graph()
     initial_state = {"rubric": "", "code": "", "response": ""}
 
-    executor.invoke(initial_state)
+    # Guardamos el tiempo que tarda en realizarse las ejecuciones
+    inicio = time.perf_counter()
+    end_state = executor.invoke(initial_state)
+    fin = time.perf_counter()
+
+    logging.info(
+        f"Tiempo: {fin - inicio:.4f}s | "
+        f"Lineas de codigo: {end_state["code"].count("\n")}"
+    )
+
     exportar_grafo(executor, "exported_graph")
 
 

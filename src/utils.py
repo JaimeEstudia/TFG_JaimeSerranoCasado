@@ -19,6 +19,21 @@ def extraer_contenido_archivo(ruta) -> str:
         return f.read()
 
 
+import psutil
+
+
+def medir_cpu_ram():
+    cpu_percent = psutil.cpu_percent(interval=1)
+    memoria = psutil.virtual_memory()
+
+    return {
+        "cpu_percent": cpu_percent,
+        "ram_total_gb": memoria.total / (1024**3),
+        "ram_usada_gb": memoria.used / (1024**3),
+        "ram_percent": memoria.percent,
+    }
+
+
 if __name__ == "__main__":
     print("Estas ejecutando utils.py")
     pass
