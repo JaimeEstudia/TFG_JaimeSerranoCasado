@@ -44,8 +44,8 @@ def define_graph():
 
     # Definimos los nodos
     def retrieve_data(state: State) -> State:
-        state["rubric"] = ask_for_rubric()
-        state["code"] = ask_for_code()
+        # state["rubric"] = ask_for_rubric()
+        # state["code"] = ask_for_code()
         return state
 
     def evaluate_code(state: State) -> State:
@@ -61,7 +61,7 @@ Code:
         return state
 
     def show_feedback(state: State) -> State:
-        print(state["response"])
+        # print(state["response"])
         return state
 
     # Creamos el graph y añadimos los nodos
@@ -79,9 +79,9 @@ Code:
     return graph.compile()
 
 
-def main():
+def main(rubric, code):
     executor = define_graph()
-    initial_state = {"rubric": "", "code": "", "response": ""}
+    initial_state = {"rubric": rubric, "code": code, "response": ""}
 
     # Guardamos el tiempo que tarda en realizarse las ejecuciones
     inicio = time.perf_counter()
@@ -89,11 +89,11 @@ def main():
     fin = time.perf_counter()
 
     logging.info(
-        f"Tiempo: {fin - inicio:.4f}s | "
-        f"Lineas de codigo: {end_state["code"].count("\n")}"
+        f"Tiempo: {fin - inicio:.4f}s | " f"Lineas de codigo: {code.count("\n")}"
     )
 
     exportar_grafo(executor, "exported_graph")
+    return end_state["response"]
 
 
 if __name__ == "__main__":
